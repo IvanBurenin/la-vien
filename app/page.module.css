@@ -1,0 +1,367 @@
+.top{
+    width: 100%;
+    height: 100vh;
+    justify-content: end;
+    display: flex;
+}
+
+.topContainer{
+    max-width: 1665px;
+    display: flex;
+}
+
+.grow{
+    display: flex;
+    flex-grow: 1;
+}
+
+.topInner{
+    gap: 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topLeft{
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+}
+
+.topTime{
+    color: #BBB;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.topTitle{
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.topSubtitle{
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    gap: 70px;
+}
+
+.news{
+    margin-top: 150px;
+}
+
+.newsInner{
+    display: flex;
+    gap: 20px;
+}
+
+.newsRight{
+    display: flex;
+    gap: 90px;
+    width: 760px;
+}
+
+.newsItem{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsText{
+    text-align: center;
+}
+
+.newsImg{
+    width: 15vw;
+    object-fit: cover;
+}
+
+.about{
+    margin-top: 180px;
+}
+
+.aboutInner{
+    display: flex;
+    gap: 20px;
+}
+
+.aboutRight{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 760px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: fit-content;
+}
+
+.contact a{
+    display: flex;
+    gap: 15px;
+}
+
+.contactIcon{
+    width: 20px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.contactText{
+    transition: all .2s;
+}
+
+.contact:hover .contactText{
+    text-decoration: underline;
+}
+
+.menu{
+    margin-top: 180px;
+}
+
+.menuInner{
+    display: flex;
+    gap: 20px;
+}
+
+.menuRight{
+    width: 760px;
+}
+
+.menuButtons{
+    margin-top: 50px;
+    display: flex;
+    gap: 60px;
+}
+
+.photo{
+    margin-top: 180px;
+    margin-bottom: 100px;
+}
+
+.photoInner{
+    display: flex;
+    gap: 20px;
+}
+
+.photoRight{
+    width: fit-content;
+}
+
+.photoRight button{
+    margin-top: 50px;
+}
+
+.photoGrid{
+    width: 760px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.photoImg{
+    width: 330px;
+    object-fit: cover;
+    cursor: zoom-in;
+    border: 2px solid transparent;
+    transition: all .2s;
+}
+
+.photoImg:hover{
+    border-color: var(--red);
+    transform: translateY(-10px);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); 
+    z-index: 1050;
+    opacity: 0; 
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; 
+    pointer-events: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+}
+
+.modalDialog {
+    margin: 0 auto;
+    padding: 0 5px;
+    position: relative;
+}
+
+.modalContent {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 20px;
+    outline: 0;
+}
+
+.modalImg{
+    width: 100%;
+}
+
+.modalOpened{
+    opacity: 1;
+	pointer-events: auto;
+    overflow-y: auto;
+}
+
+@media(max-width: 1919px){
+    .photoGrid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 1500px){
+    .newsInner{
+        flex-direction: column;
+    }
+    .newsRight{
+        margin-top: 20px;
+        width: 100%;
+        overflow: overlay;
+        gap: 50px;
+        padding-bottom: 25px;
+    }
+    .aboutInner{
+        justify-content: flex-start;
+    }
+    .menuInner{
+        justify-content: flex-start;
+    }
+    .photoInner{
+        padding: 0 1vw;
+        justify-content: flex-start;
+    }
+    .newsImg{
+        width: 318px;
+    }
+}
+
+@media(max-width: 1300px){
+    .photoInner{
+        flex-direction: column;
+    }
+    .photoGrid{
+        width: fit-content;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1130px){
+    .photoRight{
+        width: 100%;
+    }
+    .photoGrid{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 1000px){
+    .top{
+        padding-top: 120px;
+        justify-content: flex-start;
+        height: fit-content;
+    }
+    .buttons{
+        gap: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .topInner{
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+    }
+    .topLeft{
+        padding: 0 20px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 800px){
+    .topTitle{
+        font-size: 25px;
+    }
+    .topSubtitle{
+        font-size: 20px;
+    }
+    .photoGrid{
+        grid-template-columns: repeat(1, 2fr);
+        width: 100%;
+    }
+    .photoImg{
+        width: 100%;
+        height: 20vh;
+    }
+}
+
+@media(max-width: 700px){
+    .aboutInner{
+        flex-direction: column;
+    }
+    .aboutRight{
+        width: 100%;
+    }
+    .menuInner{
+        flex-direction: column;
+    }
+    .menuRight{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .menuButtons{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .menuButtons a{
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px){
+    .topTime, .topTitle, .topSubtitle{
+        text-align: center;
+    }
+    .buttons{
+        justify-content: center;
+    }
+    .buttons a{
+        width: 100%;
+    }
+}

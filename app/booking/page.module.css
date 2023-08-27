@@ -1,0 +1,221 @@
+.booking{
+    padding-top: 160px;
+    margin-bottom: 100px;
+}
+
+.bookingInner{
+    display: flex;
+}
+
+.left{
+    width: 220px;
+}
+
+.content{
+    margin-left: 60px;
+    gap: 40px 100px;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentItem{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    position: relative;
+}
+
+.text{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.input{
+    padding: 15px;
+    width: 200px;
+    border: 2px solid var(--black);
+    outline-color: var(--red);
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.inputButtons{
+    position: absolute;
+    top: 46px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.inputIcon{
+    cursor: pointer;
+}
+
+.inputIcon:hover path{
+    fill: var(--lightYellow);
+    stroke: var(--lightYellow);
+}
+
+.nameInput{
+    width: 300px;
+}
+
+.noSelect {
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+.timeContentActive{
+    display: flex !important;
+}
+
+.timeContent{
+    z-index: 10;
+    top: 69px;
+    left: 83px;
+    padding: 15px;
+    background-color: white;
+    position: absolute;
+    width: 200px;
+    display: none;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.timeContent li{
+    transition: all .1s;
+    cursor: pointer;
+}
+
+.timeContent li:hover{
+    color: var(--red);
+}
+
+.textareaContent{
+    width: 100%;
+}
+
+.textarea{
+    padding: 20px;
+    border: 2px solid var(--black);
+    width: 100%;
+    height: 250px;
+    resize: none;
+    outline-color: var(--red);
+
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contentDown{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.formBtn{
+    padding: 33px;
+    width: 300px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); 
+    z-index: 1050;
+    opacity: 0; 
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; 
+    pointer-events: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalDialog {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+}
+
+.modalContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lightYellow);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0.3rem;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modalInner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modalOpened{
+    opacity: 1;
+	pointer-events: auto;
+    overflow-y: auto;
+}
+
+.modalText{
+    text-align: center;
+}
+
+@media (max-width: 1050px){
+    .contentDown{
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .number{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 800px){
+    .bookingInner{
+        flex-direction: column;
+    }
+    .content{
+        margin-top: 50px;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px){
+    .contentItem{
+        width: 100%;
+    }
+    .input{
+        width: 100%;
+    }
+    .formBtn{
+        width: 100%;
+    }
+}

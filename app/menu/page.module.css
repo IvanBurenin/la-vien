@@ -1,0 +1,137 @@
+.menu{
+    padding-top: 160px;
+}
+
+.menuInner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuLeft{
+    width: 270px !important;
+}
+
+.list{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.listTitle{
+    font-weight: 500;
+}
+
+.menuBtn{
+    width: 80%;
+}
+
+.content{
+    margin-left: 60px;
+    width: 1065px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    height: 80vh;
+    overflow: overlay;
+}
+
+.groupTitle{
+    margin-bottom: 10px;
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.itemInner{
+    display: flex;
+    align-items: center;
+}
+
+.itemImg{
+    width: 340px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.itemContent{
+    margin-left: 30px;
+}
+
+.text{
+    font-weight: 500;
+}
+
+.features{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price, .weight{
+    color: #242424;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pagination{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+@media (max-width: 1130px){
+    .menuLeft{
+        width: fit-content !important;
+    }
+    .itemImg{
+        width: 20vw;
+        height: 140px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 850px){
+    .menuLeft{
+        width: 100% !important;
+    }
+    .menuInner{
+        flex-direction: column;
+    }
+    .content{
+        margin-top: 50px;
+        margin-left: 0;
+        width: 100%;
+        height: fit-content;
+        overflow: hidden;
+    }
+    .list{
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        overflow: overlay;
+        flex-direction: row;
+    }
+    .menuBtn{
+        width: 200px;
+    }
+}
+
+@media (max-width: 500px){
+    .itemImg{
+        display: none;
+    }
+    .itemContent{
+        margin-left: 0;
+    }
+}

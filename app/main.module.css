@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500&family=Manrope:wght@400;500&display=swap');
+
+.root{
+    --black: #1B1B1B;
+    --red: #AD0000;
+    --yellow: #FFF3E4;
+    --lightYellow: #FFC6C6;
+}
+
+.wrapper{
+    color: var(--black);
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1415px;
+}
+
+.left{
+    width: 470px;
+}
+
+.text{
+    line-height: normal;
+}
+
+.title{
+    color: var(--black);
+    font-family: Bitter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn{
+    padding: 13px 15px;
+    min-width: 150px;
+    border: 2px solid var(--black);
+    transition: all .2s;
+    background-color: transparent;
+    cursor: pointer;
+
+    color: var(--black);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn:hover{
+    border-color: var(--red);
+    color: var(--red);
+}
+
+@media (max-width: 900px){
+    .wrapper{
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 700px){
+    .left{
+        width: fit-content;
+    }
+}
+
+@media (max-width: 500px){
+    .btn{
+        width: 100%;
+    }
+}

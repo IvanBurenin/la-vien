@@ -1,0 +1,124 @@
+.about{
+    padding-top: 160px;
+}
+
+.aboutInner{
+    margin-top: 30px;
+    display: flex;
+}
+
+.aboutImg{
+    width: 470px;
+    object-fit: cover;
+}
+
+.aboutContent{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.faq{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.faqInner{
+    display: flex;
+}
+
+.faqContent{
+    margin-left: 40px;
+    width: 890px;
+}
+
+.faqItems{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.faqItem{
+    padding: 40px;
+    background-color: transparent;
+    border: 2px solid var(--black);
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.topTitle{
+    transition: all .2s;
+}
+
+.top:hover .topTitle{
+    color: var(--red);
+}
+
+.top:hover .faqIcon path{
+    fill: var(--red);
+}
+
+.faqIcon{
+    width: 22px;
+    height: 12px;
+    object-fit: contain;
+    transition: all .2s;
+}
+
+.faqIcon path{
+    transition: all .2s;
+}
+
+.openContent{
+    margin-top: 25px;
+    display: none;
+    transition: all .2s;
+}
+
+.active .faqIcon {
+    transform: rotate(180deg);
+}
+
+.active .openContent{
+    display: block;
+}
+
+@media (max-width: 1500px){
+    .aboutImg{
+        width: 35vw;
+    }
+}
+
+@media (max-width: 1000px){
+    .faqInner{
+        flex-direction: column;
+    }
+    .faqContent{
+        margin-top: 30px;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    .aboutImg{
+        display: none;
+    }
+    .aboutContent{
+        margin-left: 0;
+    }
+    .top{
+        position: relative;
+    }
+    .faqIcon{
+        position: absolute;
+        left: -31px;
+        top: 5px;
+    }
+}

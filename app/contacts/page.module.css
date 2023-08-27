@@ -1,0 +1,61 @@
+.contacts{
+    padding-top: 160px;
+}
+
+.contactsInner{
+    margin-top: 30px;
+    display: flex;
+}
+
+.content{
+    margin-left: 30px;
+    width: 890px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactsList{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact{
+    width: fit-content;
+}
+
+.contact a{
+    display: flex;
+    gap: 12px;
+}
+
+.contactText{
+    transition: all .2s;
+}
+
+.contact:hover .contactText{
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px){
+    .leftAdaptive{
+        width: 100% !important;
+    }
+    .map{
+        margin-top: 30px;
+    }
+    .map iframe{
+        width: 100%;
+        height: 250px;
+    }
+    .contactsInner{
+        flex-direction: column-reverse;
+    }
+    .content{
+        margin-left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+}

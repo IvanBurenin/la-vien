@@ -1,0 +1,28 @@
+.swiper-button-prev,
+.swiper-button-next{
+    width: 80px !important;
+    height: 80px !important;
+    background-color: var(--yellow) !important;
+    border-radius: 100px !important;
+    background-position: center !important; 
+    background-repeat: no-repeat !important;
+    transition: all .2s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+    background-color: #ffb0b0 !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    content: '' !important;
+}
+
+.swiper-button-prev{
+    background-image: url(../../../public/la-vien/home-images/slider-images/arrow-left.svg);
+}
+
+.swiper-button-next{
+    background-image: url(../../../public/la-vien/home-images/slider-images/arrow-right.svg);
+}
