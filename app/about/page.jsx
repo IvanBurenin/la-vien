@@ -15,7 +15,7 @@ export default function About() {
                 <div className={mainStyles.container}>
                     <h3 className={mainStyles.title}>О нас</h3>
                     <div className={styles.aboutInner}>
-                        <img src="/la-vien/about-image/about-image1.jpg" alt="" className={styles.aboutImg} />
+                        <img src="./la-vien/about-image/about-image1.jpg" alt="" className={styles.aboutImg} />
                         <div className={styles.aboutContent}>
                             <p className={mainStyles.text}>
                                 Наш ресторан зародился из страсти к французской культуре и изысканной кухне. Открыв двери в 2010 году, мы с самого начала ставили своей миссией подарить нашим гостям уникальный кулинарный опыт, привнося в Московскую атмосферу неповторимый дух Парижа.
