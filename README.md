@@ -11,7 +11,7 @@ Multi-page interactive website showcasing French cuisine at La-vien. Consists of
 * Booking page
 
 ## Powered by
-Used NEXT.js with custom CSS modal styles. SwiperJS was employed for the carousels.
+Used NEXT.js with custom CSS modal styles. SwiperJS was employed for the carousels
 
 ## Link
 ✅ https://ivanburenin.github.io/la-vien/
